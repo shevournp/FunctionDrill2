@@ -10,13 +10,11 @@
   Create a function called helloWorld which simply console logs 'Hello, World!'
   Call the function.
 */
-
 //CODE HERE
 
 function helloWorld(){
   console.log('Hello world!!');
 }
-helloWorld()
 ////////////////// PROBLEM 2 ////////////////////
 
 /*
@@ -38,6 +36,7 @@ const jsNinja = ()=> 'I am a JavaScript ninja'
 function printName(name){
   console.log(name);
 }
+//in terminal 
 printName('Shev');
 
 
@@ -59,6 +58,7 @@ function greeting(name){
 
 
 }
+//in terminal 
 greeting ('shev');
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -73,14 +73,14 @@ greeting ('shev');
 */
 
 //CODE HERE
-// function compareNums(numbers1,numbers2){
-// if(numbers1 >= numbers2){
-//   return numbers1;
-//   }else{
-//   return numbers2;
-//   }
-// }
-console.log(compareNums(3,24))
+function compareNums(numbers1,numbers2){
+if(numbers1 >= numbers2){
+  return numbers1;
+  }else {
+  return numbers2;
+  }
+}
+console.log(compareNums(3,3))
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -95,9 +95,9 @@ function add(one , two){
 Number(one)
 Number(two)
   return one + two 
-  let sum = add('2', 3);
 }
-console.log(sum )
+let sum = add('2', 3);
+console.log(sum);
 
 
 ////////////////// PROBLEM 7 ////////////////////
@@ -113,7 +113,7 @@ const exclaim = function(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
 
 
 
@@ -128,7 +128,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -139,6 +139,7 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
+const exclaimTree = str => `$str.toUpperCase`
 
 
 ////////////////// PROBLEM 9 ////////////////////
@@ -153,7 +154,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -167,8 +168,18 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+function nameCheck(name){
+  if (name === Steve){
+    return "whatssup Steve"  
+  }else if (name === Bryan){
+    return "cool name"
+  
+  }else{
+    return `cool name ${name}`
+  }
+  }
 
-
+let nameGreetings = nameCheck('steve')
 ////////////////// PROBLEM 11 ////////////////////
 /*
   Write a function called faveColorFinder that takes in one parameter called color (which will be a string).
@@ -180,6 +191,17 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+function faveColorFinder(color){
+  if(color === red)
+  return 'red is a great color'
+} else if (color === green){
+  return'green is a solid favorite color'
+} else if (color === black){
+  return 'so trendy'
+} else {
+  return 'you need to evaluate your favorite color choice'
+}
+let colorRating = faveColorFinder (i);
 
 
 ////////////////// PROBLEM 12 ////////////////////
@@ -191,6 +213,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+function printAllNames (name){
+  for(i = 0, name.length, i++){
+    console.log(name[i])
+  }
+}
+
 
 
 ////////////////// PROBLEM 13 ////////////////////
@@ -292,6 +320,9 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
+function myFun(arr){
+  
+}
 
 
 ////////////////// PROBLEM 22 ////////////////////
@@ -316,16 +347,16 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = []
+let globalScope = ["duck"]
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = []
+let bathroomScope = ["rubberDuck", "duck"]
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
 let bathtubScope = []
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+let pondScope = ["realDuck"]
 
 
 
